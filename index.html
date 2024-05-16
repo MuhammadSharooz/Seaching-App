@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://i.pinimg.com/564x/e5/49/d4/e549d465fd3c89c93fa60e8297154be7.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+            <div class="container-fluid">
+              <a class="navbar-brand p" href="#"><h2> Mobile Phone</h2></a>
+                <div class="d-flex gap-2">
+                  <select class="form-select brand " onchange="setmodel()" aria-label="Default select example">
+                  </select>
+                  <select class="form-select model " aria-label="Default select example">
+                  </select>
+                  <button class="btn btn-outline-success" onclick="Clear()" type="submit">Clear</button>
+                  <button class="btn btn-outline-success" onclick="search()" type="submit">Search</button>
+                </div>
+            </div>
+          
+        </nav>
+         
+        <div class="row p-2" id="main">
+        </div>
+        <div class="row p-2 style.display="none"" id="cardDetail">
+         
+        </div>
+     </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
